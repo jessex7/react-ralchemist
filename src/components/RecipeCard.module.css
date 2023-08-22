@@ -1,0 +1,72 @@
+.rcard {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: var(--rounded-box, 1rem);
+    border-width: 1px;
+    padding: 10px;
+    border-color: #818CF8;
+    justify-content: flex-start;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.rcardImage {
+    flex: 1 0 auto;
+    align-self: center;
+    margin: auto;
+}
+
+/* .rcard img {
+    flex: 1 1 auto;
+    align-self: center;
+} */
+
+
+.rcardImage img {
+    align-self: center;
+    border-radius: var(--rounded-box, 1rem);
+    border-color: #0F172A;
+    border-width: 1px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.rcardDetails {
+    /* display: flex; */
+    flex: 20 1 auto;
+    flex-direction: column;
+    padding-left: var(--padding-card, 1rem);
+    padding-right: var(--padding-card, 1rem);
+    gap: 0.5rem
+        /* 8px */
+    ;
+}
+
+.rcardAction {
+    justify-self: flex-end;
+    flex: 1 0 auto;
+    align-self: center;
+}
+
+.rcard:hover {
+    @apply bg-neutral-focus;
+}
+
+
+
+/* "[data-theme=night]": {
+    "color-scheme": "dark",
+    "primary": "#38bdf8",
+    "secondary": "#818CF8",
+    "accent": "#F471B5",
+    "neutral": "#1E293B",
+    "neutral-focus": "#273449",
+    "base-100": "#0F172A",
+    "info": "#0CA5E9",
+    "info-content": "#000000",
+    "success": "#2DD4BF",
+    "warning": "#F4BF50",
+    "error": "#FB7085",
+  }, */
