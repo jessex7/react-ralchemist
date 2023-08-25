@@ -72,7 +72,7 @@ export default async function RecipesMain() {
     return (
         <div className="w-3/5">
             <h1 className="text-4xl mb-4 text-center">Recipes</h1>
-            <div className="space-y-4">{recipeCards}</div>
+            <div className="recipe-cards-container">{recipeCards}</div>
             {/* <table className="table">
                 <thead>
                     <tr>
