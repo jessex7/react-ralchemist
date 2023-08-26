@@ -19,14 +19,23 @@
 // }
 
 export interface Recipe {
-    rid: number;
+    recipe_id: number;
     name: string;
     author: string;
     cuisine: string;
     createdAt: Date;
-    ingredients: string; // TODO make this an array of ingredient objects
+    ingredients: Array<Ingredient>; // TODO make this an array of ingredient objects
     instructions: string; // TODO make this an array
-    image: string // TODO make this a URL
+    image: string; // TODO make this a URL
+    rating: number;
+}
+
+export interface Ingredient {
+    ingred_name: string;
+    amount: number;
+    unit: string;
+    notes: string;
+    group: string;
 }
 
 // export async function http<T>(

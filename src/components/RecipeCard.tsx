@@ -25,7 +25,7 @@ export function RecipeCard(recipe: Recipe) {
             </div>
             <div className={styles.rcardAction}>
                 <button className="btn btn-primary">
-                    <Link href={`/recipes/${recipe.rid}`}>Details</Link>
+                    <Link href={`/recipes/${recipe.recipe_id}`}>Details</Link>
                 </button>
             </div>
         </div>
