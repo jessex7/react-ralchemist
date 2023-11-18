@@ -1,0 +1,47 @@
+.ilist {
+    display: inline;
+    box-sizing: border-box;
+}
+
+.ingredientItem {
+    display: flex;
+    gap: 10px;
+}
+
+.ingredientItem>* {
+    background-color: hsl(var(--b1) / var(--tw-bg-opacity));
+    --tg-bg-opacity: 0.05;
+
+}
+
+
+
+.ingredientItem>*:focus {
+    --tg-bg-opacity: 1;
+    --tg-text-opacity: 1;
+
+}
+
+.ingredientAmount {
+    display: flex;
+    flex: 1 1 auto;
+    width: 20px;
+
+    @apply input;
+    @apply input-ghost;
+}
+
+.ingredientUnit {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.ingredientName {
+    display: flex;
+    flex: 2 1 auto;
+}
+
+.ingredientNotes {
+    display: flex;
+    flex: 1 1 auto;
+}
